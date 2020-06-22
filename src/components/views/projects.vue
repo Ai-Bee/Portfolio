@@ -11,7 +11,7 @@
                               <img src="../../assets/upper-right-arrow.svg">
                          </div>
                          <h5 class="mt-md-4 pt-4">The Multisource data analytics and triangulation dashboard</h5>
-                         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                         <p class="card-text">Its a singular dashboard that provides a comparative view of a good number of health indicators in Nigeria as presented by various data sources.</p>
                          <span class="badge px-3 py-2  mb-2">HTML</span>
                          <span class="badge px-3 py-2 mb-2">CSS</span>
                          <span class="badge px-3 py-2 mb-2">JavaScript</span>
