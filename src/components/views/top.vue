@@ -1,6 +1,6 @@
 <template>
       <nav class="navbar sticky-top container border-bottom-1">
-        <img class="pt-3" src="../../assets/Logo.svg" />
+        <img class="pt-3" src="../../assets/Logo.svg" title="Click to Register" @click="$router.push('/')">
       </nav>
 </template>
 

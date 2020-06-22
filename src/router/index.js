@@ -9,13 +9,13 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'profilePage',
-      component: profilePage
-    },
-    {
-      path: '/sign-up',
       name: 'signUp',
       component: signUp
+    },
+    {
+      path: '/profilePage',
+      name: 'profilePage',
+      component: profilePage
     }
   ]
 })
