@@ -1,0 +1,26 @@
+.about-row{
+    margin-top: 19vh;
+    margin-bottom: 30vh;
+    div.childOne{
+        border-right: 4px solid rgb(120, 120, 184);
+        ul{
+            margin-right: 5px;
+            li{
+                padding-block-end: 2%;
+                list-style-type: none;
+            }
+        }
+    }
+    ul.childTwo{
+        border-left: 4px solid rgb(120, 120, 184);
+        margin-left: 5px;
+        padding-top: 6%;
+        p{
+            font-weight: 500;
+        }
+        li{
+            list-style-type: none;
+        }
+        
+    }
+}

@@ -1,0 +1,41 @@
+.banner-row{
+    height: 100vh;
+    background: linear-gradient(108deg, #7dd1bb, #d0e7e1);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+    .theText{
+        text-align: end;
+        align-self: center;
+        h3{
+            font-family: 'Festive', cursive;
+            font-size: 4rem;
+        }
+        p{
+            font-size: larger;
+        }
+    }
+    .me-image{
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-size: contain;
+    }
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 56%}
+    50%{background-position:100% 45%}
+    100%{background-position:0% 56%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 56%}
+    50%{background-position:100% 45%}
+    100%{background-position:0% 56%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 56%}
+    50%{background-position:100% 45%}
+    100%{background-position:0% 56%}
+}
