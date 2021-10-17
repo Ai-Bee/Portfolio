@@ -3,6 +3,7 @@
     margin-bottom: 30vh;
     div.childOne{
         border-right: 4px solid rgb(120, 120, 184);
+        padding-top: 1rem;
         ul{
             margin-right: 5px;
             li{
@@ -23,4 +24,20 @@
         }
         
     }
+}
+
+@media screen and (max-width: 500px) {
+    .about-row{
+        margin-top: -2vh;
+        margin-bottom: 1vh;
+        div.childOne{
+            padding-top: 0rem;
+            div{
+                padding: 0 6% ;
+            }
+        }
+        ul.childTwo{
+            padding: 5% 6%;
+        }
+    } 
 }

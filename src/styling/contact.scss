@@ -1,6 +1,6 @@
 #contactPage{
     background-color: rgb(132, 180, 182);
-    padding-top: 20vh;
+    padding-top: 0vh;
     padding-bottom: 15vh;
     .theTexts{
         text-align: center;
@@ -40,7 +40,6 @@
 @media screen and (max-width: 500px) {
     .theTexts{
         .social-row{
-            // background-color: brown;
             margin-left: 20px !important;
         }
     }

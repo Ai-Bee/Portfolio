@@ -5,7 +5,7 @@ function About() {
   return (
     <div>
          <div id="aboutPage" className="about-row row justify-content-center">
-             <div className="childOne col-lg-5 text-end pt-3">
+             <div className="childOne col-lg-5 text-end">
                  <div className='py-4 mt-4'>
                  <h2>I'm an awesome techie... 😎 Just FYI</h2>
                 <p>I enjoy building web experiences that are not only functional but that that users can enjoy using 👨‍🎨, isn't is just a pain in the neck when you're using a webpage and you just can't figure out where the heck is happening? 😵  </p>
