@@ -8,7 +8,7 @@
     .array{
         display: grid;
         grid-template-columns: repeat(3, 30%);
-        justify-content: center;
+        justify-content: space-around;
         padding-top: 30px;
         .carded {
             width: 300px;
@@ -55,6 +55,13 @@
           }
           
     }
+}
+
+@media screen and (max-width: 768px) {
+  #projectPage  .array{
+    grid-template-columns: repeat(2, 40%);
+    justify-content: space-around;
+  }
 }
 
 @media screen and (max-width: 500px) {
