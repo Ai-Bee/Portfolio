@@ -27,7 +27,7 @@ function Projects() {
             <img src="./producthunt.PNG" alt="gdgd"/>
             <h3>Product Hunt</h3>
             <div class="focus-content">
-                 <a target="_blank" href="https://the-product-hunt.netlify.app/home">View</a>
+                 <a target="_blank" href="https://the-product-hunt.netlify.app">View</a>
             </div>
         </li>
         <li class="carded">
@@ -44,20 +44,20 @@ function Projects() {
                  <a target="_blank" href="https://rccgbcc.org">View</a>
             </div>
         </li>
-        <li class="carded">
+        {/* <li class="carded">
             <img src="./wayapay.PNG" alt="gdgd"/>
             <h3>Wayapay</h3>
             <div class="focus-content">
                  <a target="_blank" href="http://website.waya-group.com/">View</a>
             </div>
-        </li>
-        <li class="carded">
+        </li> */}
+        {/* <li class="carded">
             <img src="./procleaners.PNG" alt="gdgd"/>
             <h3>PROCLEANERS</h3>
             <div class="focus-content">
                  <a target="_blank" href="https://zealous-jennings-22812f.netlify.app/">View</a>
             </div>
-        </li>
+        </li> */}
         <li class="carded">
             <img src="./quizapp.PNG" alt="gdgd"/>
             <h3>Quiz App</h3>
