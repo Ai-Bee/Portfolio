@@ -62,7 +62,7 @@ function Projects() {
             <img src="./quizapp.PNG" alt="gdgd"/>
             <h3>Quiz App</h3>
             <div class="focus-content">
-                 <a target="_blank" href="https://trusting-williams-041224.netlify.app">View</a>
+                 <a target="blank" href="https://trusting-williams-041224.netlify.app">View</a>
             </div>
         </li>
        </ul>
