@@ -7,7 +7,7 @@ function Projects() {
         <h4 className="text-start py-3">Some of my recent work</h4>
         <Fade cascade top>
        <ul className="array row">
-       <li class="carded">
+       {/* <li class="carded">
             <img src="./inclusive.PNG" alt="gdgd"/>
             <h3>Inclusive Learning Hub</h3>
             <div class="focus-content">
@@ -15,7 +15,7 @@ function Projects() {
                  href="https://inclusivelearninghub.com"
                  target="_blank">View</a>
             </div>
-        </li>
+        </li> */}
         <li class="carded">
             <img src="./motionware.PNG" alt="gdgd"/>
             <h3>Motionware Replica</h3>
@@ -37,13 +37,13 @@ function Projects() {
                  <a target="_blank" href="https://msdat.fmohconnect.gov.ng/central_analytics">View</a>
             </div>
         </li>
-        <li class="carded">
+        {/* <li class="carded">
             <img src="./rccg.PNG" alt="gdgd"/>
             <h3>RCCG BCC</h3>
             <div class="focus-content">
                  <a target="_blank" href="https://rccgbcc.org">View</a>
             </div>
-        </li>
+        </li> */}
         {/* <li class="carded">
             <img src="./wayapay.PNG" alt="gdgd"/>
             <h3>Wayapay</h3>
