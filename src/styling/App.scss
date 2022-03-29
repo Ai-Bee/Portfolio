@@ -4,11 +4,62 @@
 .App {
   text-align: center;
   font-family: 'Rajdhani', sans-serif;
+  cursor: none;
+  
+  .cursor{
+    z-index: 9999999;
+    position: fixed;
+    background: #2696E8;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    pointer-events: none;
+    box-shadow: 0 0 20px #2696E8,
+                0 0 60px #2696E8,
+                0 0 100px #2696E8;
+    animation: colors 5s infinite;
+    transform: translate(-50%, -50%);
+    display: none;
+  }
+  
+  @keyframes colors{
+    0%{
+      filter: hue-rotate(0deg);
+    }
+    100%{
+      filter: hue-rotate(360deg);
+    }
+  }
+  
+  .cursor:before{
+    content: '';
+    position: absolute;
+    background: #2696E8;
+    width: 50px;
+    height: 50px;
+    opacity: 0.2;
+    transform: translate(-30%, -30%);
+    border-radius: 50%;
+  }
 }
 
 .App-logo {
   height: 40vmin;
+  background-color: #61dafb;
   pointer-events: none;
+}
+
+.straight{
+  color: #f9320a; 
+  margin-top: 1em;
+  margin-bottom: 3em;
+  letter-spacing: -0.7em;
+}
+
+.text-straight{
+  writing-mode: vertical-lr;
+ text-orientation: upright;
+ position: fixed;
 }
 
 @media (prefers-reduced-motion: no-preference) {
