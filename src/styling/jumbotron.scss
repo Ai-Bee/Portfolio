@@ -4,15 +4,6 @@
     -webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;
     animation: AnimationName 30s ease infinite;
-    .text-straight{
-        img{
-            filter: contrast(10%);
-            animation: all 2s ease-out;
-        }
-        img:hover{
-            filter:  contrast(80%);
-        }
-    }
     .theText{
         text-align: START;
         align-self: flex-end;
@@ -31,12 +22,21 @@
           align-self: flex-end;
           padding: 2em;
           h1 {
-            font-size: 10em;
             cursor: pointer;
             font-style: oblique;
           }
           h1:hover{
               color: cadetblue;
+              text-decoration: line-through;
+          }
+          >h1:nth-child(1){
+            font-size: 8em;
+          }
+          >h1:nth-child(2){
+            font-size: 9em;
+          }
+          >h1:nth-child(3){
+            font-size: 10em;
           }
       }
     }

@@ -2,35 +2,27 @@ import '../styling/jumbotron.scss';
 import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade'
 import Slide from 'react-reveal/Slide'
+import { useNavigate } from "react-router-dom";
 
 
 function Jumbotron() {
+  let navigate = useNavigate();
+  const goToWork = () => {
+    navigate("/work");
+  }
+  const goToAbout = () => {
+    navigate("/about");
+  }
+  const goToContact = () => {
+    navigate("/contact-me");
+  }
   return (
     <div className="container-fluid" id="home">
-        <div class="bars" id="nav-action">
+        {/* <div class="bars" id="nav-action">
   <span class="bar"> </span>
-</div>
+</div> */}
       <div className="banner-row row justify-content-center" style={{ backgroundImage: 'url(./illustration.png)' }}>
-        <div className='col text-straight row'>
-          
-          <span className="straight">|||||||||||||||||||||||||||||||||||</span>
-          <a href="#"
-            target="_blank" rel="noreferrer" className="col mb-4">
-            <img src="./instagram.png" alt="instagram logo" />
-          </a>
-          <a href="#" rel="noreferrer"
-            target="_blank" className=" mb-4 col">
-            <img src="./twitter.png" alt="twitter logo" />
-          </a>
-          <a href="#" target="_blank"
-            rel="noreferrer" className=" mb-4 col">
-            <img src="./github-sign.png" alt="github logo" />
-
-          </a>
-          <a href="#" target="_blank" rel="noreferrer" className=" mb-4 col">
-            <img src="./linkedin.png" alt="linkedin logo" />
-          </a>
-        </div>
+       
         <div className="col-lg-5 theText">
          
           <Slide right>
@@ -53,9 +45,9 @@ function Jumbotron() {
           <div className="col-lg-6 me-image" >
 
             <div className='texts'>
-              <h1>WORK</h1>
-              <h1>ABOUT</h1>
-              <h1>CONTACT</h1>
+              <h1 onClick={goToWork}>WORK</h1>
+              <h1 onClick={goToAbout}>ABOUT</h1>
+              <h1 onClick={goToContact}>CONTACT</h1>
             </div>
 
           </div>

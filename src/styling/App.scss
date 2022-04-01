@@ -5,6 +5,21 @@
   text-align: center;
   font-family: 'Rajdhani', sans-serif;
   cursor: none;
+    .text-straight{
+      margin-left: 1.4em;
+      .straight {
+        span{
+          letter-spacing: 2px;
+        }
+      }
+      img{
+          filter: contrast(10%);
+          animation: all 2s ease-out;
+      }
+      img:hover{
+          filter:  contrast(80%);
+      }
+  }
   
   .cursor{
     z-index: 9999999;
