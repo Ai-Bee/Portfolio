@@ -1,19 +1,61 @@
 #projectPage{
      background-color: rgb(132, 180, 182);
+     background-blend-mode: hard-light;
+     height: 100vh;
+     /* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: rgb(96, 143, 145);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(167, 167, 168);
+  border-radius: 20px;
+
+}
      h4{
         font-family: 'Festive', cursive;
         font-size: 35px;
-        padding-left: 65px;
+        padding-left: 10px;
+        color: aliceblue;
      }
+     .work-text{
+      display: flex;
+      align-items: flex-start;
+      align-content: center;
+      color: aliceblue;
+      margin-left: 6em;
+      margin-bottom:5.5em;
+      flex-direction: column;
+      justify-content: flex-end;
+      p{
+        text-align: left;
+        max-width: 76%;
+        font-size: larger;
+        span{
+          color: rgb(44, 82, 185);
+        }
+      }
+     }
+
     .array{
-        display: grid;
-        grid-template-columns: repeat(3, 30%);
-        justify-content: space-around;
-        padding-top: 30px;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      display: grid;
+      margin-right: 2%;
+      max-height: 100vh;
+      overflow-y: scroll;
+      grid-template-columns: repeat(2, 45%);
+      grid-column-gap: 10%;
+      justify-content: center;
+        
         .carded {
             width: 300px;
             height: 280px;
             padding: 0;
+            margin-top: 20px;
             box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
             border-radius: 8px;
             box-sizing: border-box;
@@ -38,12 +80,19 @@
             line-height: 32px;
             font-weight: 500;
             font-size: 20px;
+            color: aliceblue;
             font-family: 'Rajdhani', sans-serif;
           }
           
           .carded .focus-content {
             display: block;
             padding: 8px 12px;
+            a {
+              color: aliceblue;
+            }
+            a:hover{
+              color: rgb(159, 176, 190);
+            }
           }
           
           .carded:hover img, .carded:focus-within img {

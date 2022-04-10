@@ -1,13 +1,33 @@
 import './styling/App.scss';
 import Jumbotron from './parts/jumbotron'
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import About from './parts/about';
 import Contact from './parts/contact';
 import Projects  from './parts/projects';
 import { useEffect } from 'react';
-// import { useState } from 'react/cjs/react.development';
+import { useNavigate } from "react-router-dom";
 
-function App() {
+function App(props) {
+  let navigate = useNavigate();
+  const pathname = window.location.pathname
+  const goHome = () => {
+    navigate("/");
+  }
+
+  let dynamicHome = () => {
+    if(pathname == '/') {
+      return <div>
+         <span className="straight">|||||||||||||||||||||||||||||||||||</span>
+      </div>
+    } else {
+      return <div>
+      <a href="#" onClick={goHome} className="mt-4 mb-4 col">
+           <img src="./home.png" alt="twitter logo" />
+         </a>
+         <span className="straight">|||||||||||||||||||||||</span>
+      </div>
+    }
+  }
 
   useEffect(() => {
     const cursor = document.querySelector(".cursor");
@@ -38,24 +58,27 @@ function App() {
   return (
     <div className="App">
      <div className="cursor"></div>
-     <div className=' text-straight row'>
-     {/* <span className='mb-2'>HOME</span> */}
-          <span className="straight">||||||||||||||||||||||||||||||||||||</span>
-          <a href="#"
-            target="_blank" rel="noreferrer" className="col mb-4">
-            <img src="./instagram.png" alt="instagram logo" />
-          </a>
-          <a href="#" rel="noreferrer"
+     <div className='text-straight row'>
+      {
+        dynamicHome()
+      }
+
+        
+          <a href="https://twitter.com/ai_bee__" rel="noreferrer"
             target="_blank" className=" mb-4 col">
             <img src="./twitter.png" alt="twitter logo" />
           </a>
-          <a href="#" target="_blank"
+          <a href="https://github.com/Ai-Bee" target="_blank"
             rel="noreferrer" className=" mb-4 col">
             <img src="./github-sign.png" alt="github logo" />
 
           </a>
-          <a href="#" target="_blank" rel="noreferrer" className=" mb-4 col">
+          <a href="https://www.linkedin.com/in/iboro-inyang/" target="_blank" rel="noreferrer" className=" mb-4 col">
             <img src="./linkedin.png" alt="linkedin logo" />
+          </a>
+          <a href="https://medium.com/@iboroinyang01"
+            target="_blank" rel="noreferrer" className="col mb-4">
+            <img src="./medium.png" alt="medium logo" />
           </a>
         </div>
      <Routes>
