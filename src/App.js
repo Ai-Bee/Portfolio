@@ -37,7 +37,6 @@ function App(props) {
     document.addEventListener("mousemove", (e) => {
       let x = e.pageX;
       let y = e.pageY;
-
       cursor.style.top = y + "px";
       cursor.style.left = x + "px";
       cursor.style.display = "block";
@@ -62,25 +61,22 @@ function App(props) {
       {
         dynamicHome()
       }
-
-        
-          <a href="https://twitter.com/ai_bee__" rel="noreferrer"
-            target="_blank" className=" mb-4 col">
-            <img src="./twitter.png" alt="twitter logo" />
-          </a>
-          <a href="https://github.com/Ai-Bee" target="_blank"
-            rel="noreferrer" className=" mb-4 col">
-            <img src="./github-sign.png" alt="github logo" />
-
-          </a>
-          <a href="https://www.linkedin.com/in/iboro-inyang/" target="_blank" rel="noreferrer" className=" mb-4 col">
-            <img src="./linkedin.png" alt="linkedin logo" />
-          </a>
-          <a href="https://medium.com/@iboroinyang01"
-            target="_blank" rel="noreferrer" className="col mb-4">
-            <img src="./medium.png" alt="medium logo" />
-          </a>
-        </div>
+        <a href="https://twitter.com/ai_bee__" rel="noreferrer"
+          target="_blank" className=" mb-4 col">
+          <img src="./twitter.png" alt="twitter logo" />
+        </a>
+        <a href="https://github.com/Ai-Bee" target="_blank"
+          rel="noreferrer" className=" mb-4 col">
+          <img src="./github-sign.png" alt="github logo" />
+        </a>
+        <a href="https://www.linkedin.com/in/iboro-inyang/" target="_blank" rel="noreferrer" className=" mb-4 col">
+          <img src="./linkedin.png" alt="linkedin logo" />
+        </a>
+        <a href="https://medium.com/@iboroinyang01"
+          target="_blank" rel="noreferrer" className="col mb-4">
+          <img src="./medium.png" alt="medium logo" />
+        </a>
+      </div>
      <Routes>
         <Route path="/" element={<Jumbotron />} />
         <Route path="about" element={  <About />} />

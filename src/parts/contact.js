@@ -20,7 +20,10 @@ function Contact() {
             <br />
             I speak enough for both of us </p>
           <div className="row social-row justify-content-center">
-            <button className='col-sm-9 col-md-5 css-button-arrow--sky'>Say Hello</button>
+            <button className='col-sm-9 col-md-5 css-button-arrow--sky'>
+            <a href="mailto:iboroinyang01@gmail.com">Say Hello
+            </a>
+            </button>
           </div>
         </div>
       </div>

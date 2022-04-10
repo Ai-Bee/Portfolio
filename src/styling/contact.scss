@@ -154,11 +154,7 @@
             font-size: larger;
         }
         a{
-            text-align: start;
-            font-size: 30px;
-            font-family: 'Patrick Hand', cursive;
             text-decoration: none;
-            transition: all 2s ease-out;
         }
         a:hover{
             color: #e6dec1;
@@ -180,8 +176,9 @@
                 overflow: hidden;
                 border-radius: 5px;
                 border: none;
-                
               }
+
+
               button.css-button-arrow--sky:hover {
                 border-radius: 5px;
                 padding-right: 24px;
