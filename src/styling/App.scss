@@ -7,6 +7,7 @@
   cursor: none;
     .text-straight{
       margin-left: 1.4em;
+      z-index: 200;
       .straight {
         span{
           letter-spacing: 2px;
@@ -59,14 +60,9 @@
   }
 }
 
-.App-logo {
-  height: 40vmin;
-  background-color: #61dafb;
-  pointer-events: none;
-}
 
 .straight{
-  color: #f9320a; 
+  color: #dd5f45; 
   margin-top: 1em;
   margin-bottom: 3em;
   letter-spacing: -0.7em;
@@ -76,27 +72,6 @@
   writing-mode: vertical-lr;
  text-orientation: upright;
  position: fixed;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
 }
 
 @keyframes App-logo-spin {

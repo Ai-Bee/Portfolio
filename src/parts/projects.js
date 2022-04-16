@@ -23,28 +23,30 @@ function Projects() {
             <div class="focus-content">
                  <a 
                  href="https://special-schools.netlify.app"
-                 target="_blank">View</a>
+                 target="_blank"
+                 rel='noreferrer'
+                 >View</a>
             </div>
         </li>
                               <li class="carded">
                                    <img src="./motionware.PNG" alt="gdgd" />
                                    <h3>Motionware Replica</h3>
                                    <div class="focus-content">
-                                        <a target="_blank" href="https://suspicious-liskov-bfb3ec.netlify.app/#/profilePage">View</a>
+                                        <a target="_blank"  rel='noreferrer' href="https://suspicious-liskov-bfb3ec.netlify.app/#/profilePage">View</a>
                                    </div>
                               </li>
                               <li class="carded">
                                    <img src="./producthunt.PNG" alt="gdgd" />
                                    <h3>Product Hunt</h3>
                                    <div class="focus-content">
-                                        <a target="_blank" href="https://the-product-hunt.netlify.app">View</a>
+                                        <a target="_blank"  rel='noreferrer' href="https://the-product-hunt.netlify.app">View</a>
                                    </div>
                               </li>
                               <li class="carded">
                                    <img src="./msdat.PNG" alt="gdgd" />
                                    <h3>MSDAT</h3>
                                    <div class="focus-content">
-                                        <a target="_blank" href="https://msdat.fmohconnect.gov.ng/central_analytics">View</a>
+                                        <a target="_blank" rel='noreferrer' href="https://msdat.fmohconnect.gov.ng/central_analytics">View</a>
                                    </div>
                               </li>
                               {/* <li class="carded">

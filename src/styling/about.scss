@@ -5,19 +5,113 @@
 	background-position: top center;
 	background-attachment: fixed;
     overflow-x: hidden;
+    height: 100vh;
     background-image: url(../DT1579.jpg);
     div.aboutBody{
         color: #ffffff;
         padding-left: 9vw;
         padding-right: 3vw;
         padding-top: 50px;
-        height: 100vh;
         max-width: 100vw;
         overflow-x: hidden;
         background-image: linear-gradient(#000000eb, transparent 70%);
         background-size: 100% 100%;
         mix-blend-mode: revert;
         overflow-y: scroll;
+        p{
+            font-size: larger;
+            span{
+                color: #fff;
+                background-color: #8a8c8d;
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+        .workArea{
+            margin-bottom: 2em;
+            padding-left: 10px;
+            .css-button-sharp--sky {
+                min-width: 130px;
+                height: 40px;
+                background-color: #fff;
+                padding: 5px 10px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                position: relative;
+                display: inline-block;
+                outline: none;
+                border: none;
+                color: #443919;
+              }
+            .css-button-sharp--sky.active {
+                color: #fff;
+                background: #443919;
+              }
+
+        }
+        .tab-content{
+            .tab-pane{
+                background-color: #44391982;
+                padding-top: 1.5em;
+                height: 10em;
+            }
+        }
+        .skills{
+            ul{
+                background-color: #44391982;
+                li{
+                    list-style-type: none;
+                    font-size: larger;
+                    font-weight: bolder;
+                    color: #fff;
+                    transition: all 1s ease-in-out;
+                }
+                li:hover{
+                    background-color: #fff;
+                    color: #44391982;
+                }
+            }
+        }
+        .css-button-sharp--grey {
+            min-width: 130px;
+            height: 40px;
+            color: #fff;
+            padding: 5px 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            outline: none;
+            border: 2px solid #495057;
+            background: #495057;
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+          }
+          .css-button-sharp--grey:hover {
+            background: #fff;
+            a{
+                color: #495057
+
+            }          }
+        h4{
+            padding-left: 10px;
+            font-size: 39px;
+            color: rgb(72, 202, 159);
+            border-left: 4px solid rgb(72, 202, 159);
+            font-weight: bolder;
+            transition: all 0.5s ease-in;
+            width: 60%;
+        } 
+        h4:hover{
+            background-color: chocolate;
+            color: #fff;
+        }
         h2{
             font-size: 8rem;
             font-weight: 400;
@@ -30,7 +124,6 @@
         }
         h5{ 
             font-size: 4rem;
-            // border-left: 2px solid rgb(169, 183, 196);
             padding-left: 10px;
             span.name {
                 color: rgb(39, 85, 211);
@@ -38,6 +131,12 @@
             }
             span:hover {
                 text-decoration: underline;
+            }
+        }
+        .first-col{
+            p{
+                font-weight: bolder;
+                padding-left: 10px;
             }
         }
     }
