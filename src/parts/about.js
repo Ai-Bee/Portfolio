@@ -3,7 +3,7 @@ import '../styling/about.scss';
 // import Slide from 'react-reveal/Slide'
 
 function About() {
-  let [current, setCurrent] = useState('one');
+  let [current, setCurrent] = useState('two');
   
   let toggle = (e, arg) => {
     e.preventDefault();
@@ -14,7 +14,7 @@ function About() {
       <div id="aboutPage" className="about-row row justify-content-center">
         <div className='aboutBody'>
           <div className='row justify-content-start align-content-center'>
-            <div className='col-sm-7 first-col mt-4 pt-4'>
+            <div className='col-sm-11 col-lg-7 first-col mt-4 pt-4'>
               <h2 className='text-start'>About Me</h2>
               <h5 className='text-start'>
                 I'm <span className='name'>Iboro,</span><br />
@@ -40,6 +40,12 @@ function About() {
               <h4 className='text-start my-4'>My Work Experience</h4>
               <div className="row">
                 <div className="col-3">
+                  <div className='workArea-mobile'>
+                  <button onClick={e => toggle(e, 'one')} className={`css-button-sharp--sky ${current === 'one' ? "active" : "inActive"}`}>Kora Technologies</button>
+                    <button onClick={e => toggle(e, 'two')} className={`css-button-sharp--sky ${current === 'two' ? "active" : "inActive"}`}>ehealth4everyone</button>
+                    <button onClick={e => toggle(e, 'three')} className={`css-button-sharp--sky ${current === 'three' ? "active" : "inActive"}`}>TIIDELab</button>
+                    <button  onClick={e => toggle(e, 'four')} className={`css-button-sharp--sky ${current === 'four' ? "active" : "inActive"}`}>Sterling Bank</button>
+                  </div>
                   <div className="nav flex-column workArea">
                     <button onClick={e => toggle(e, 'one')} className={`css-button-sharp--sky ${current === 'one' ? "active" : "inActive"}`}>Kora Technologies</button>
                     <button onClick={e => toggle(e, 'two')} className={`css-button-sharp--sky ${current === 'two' ? "active" : "inActive"}`}>ehealth4everyone</button>
@@ -47,7 +53,7 @@ function About() {
                     <button  onClick={e => toggle(e, 'four')} className={`css-button-sharp--sky ${current === 'four' ? "active" : "inActive"}`}>Sterling Bank</button>
                   </div>
                 </div>
-                <div className="col-9">
+                <div className="col-sm-12 col-md-9">
                   <div className="tab-content">
                     <div className={`tab-pane fade show ${current === 'one' ? "active" : ""}`} role="tabpanel" aria-labelledby="v-pills-home-tab">  
                       <ul className='text-start'>
@@ -134,8 +140,8 @@ function About() {
            VIEW MY CV
           </a></button>
             </div>
-            <div className='col'>
-              images come here
+            <div className='col col-image-lastone'>
+              <img src='./peep-standing.svg' alt='business-3d-man-with-phone'/>
             </div>
           </div>
         </div>

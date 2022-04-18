@@ -1,20 +1,21 @@
 #projectPage{
-     background-color: rgb(132, 180, 182);
-     background-blend-mode: hard-light;
-     height: 100vh;
+    //  background-color: rgb(132, 180, 182);
+    background: url(../b1.png), pink;
+    height: 100vh;
+    background-blend-mode: hard-light;
      /* Works on Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 8px;
-}
-*::-webkit-scrollbar-track {
-  background: rgb(96, 143, 145);
-}
+      *::-webkit-scrollbar {
+        width: 8px;
+      }
+      *::-webkit-scrollbar-track {
+        background: rgb(96, 143, 145);
+      }
 
-*::-webkit-scrollbar-thumb {
-  background-color: rgb(167, 167, 168);
-  border-radius: 20px;
+      *::-webkit-scrollbar-thumb {
+        background-color: rgb(167, 167, 168);
+        border-radius: 20px;
 
-}
+      }
      h4{
         font-family: 'Festive', cursive;
         font-size: 35px;
@@ -34,9 +35,15 @@
         text-align: left;
         max-width: 76%;
         font-size: larger;
-        span{
-          color: rgb(44, 82, 185);
-        }
+          span{
+              color: #fff;
+              background-color: #8a8c8d;
+              a{
+                  text-decoration: none;
+                  color: #fff;
+              }
+          }
+      
       }
      }
 
@@ -107,14 +114,37 @@
 }
 
 @media screen and (max-width: 768px) {
-  #projectPage  .array{
-    grid-template-columns: repeat(2, 40%);
-    justify-content: space-around;
-  }
+  #projectPage {
+    background: none;
+    background: url(../b2.png), url(../wavey3.svg) no-repeat top, pink;
+    .work-text{
+      padding-top: 2em;
+      margin-left: 0;
+      padding-left: 6em;
+    }
+    .array {
+      padding-left: 5em;
+      background: none;
+      background: url(../b2.png), url(../wavey.svg) no-repeat bottom, pink;
+      background-blend-mode: hard-light;
+      margin-left: 0;
+      justify-content: center;
+    }
+  } 
 }
 
 @media screen and (max-width: 500px) {
-    .array{
-        grid-template-columns: repeat(1, 70%) !important;
+  #projectPage {
+    .work-text{
+      margin-bottom: 0.5em;
+      padding-left: 3em;
     }
+    .array{
+      padding-left: 3em;
+      max-height: -webkit-fill-available;
+      grid-template-columns: repeat(1, 90%) !important;
+      padding-bottom: 6em;
+  }
+  }
+    
 }

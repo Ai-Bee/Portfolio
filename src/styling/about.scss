@@ -1,6 +1,6 @@
 #aboutPage{
     max-width: 100vw;
-    background-color: rgb(68, 98, 179);
+    background-color: rgb(179, 68, 77);
     background-size: 100% auto;
 	background-position: top center;
 	background-attachment: fixed;
@@ -18,6 +18,9 @@
         background-size: 100% 100%;
         mix-blend-mode: revert;
         overflow-y: scroll;
+        .workArea-mobile{
+            display: none;
+        }
         p{
             font-size: larger;
             span{
@@ -32,26 +35,27 @@
         .workArea{
             margin-bottom: 2em;
             padding-left: 10px;
-            .css-button-sharp--sky {
-                min-width: 130px;
-                height: 40px;
-                background-color: #fff;
-                padding: 5px 10px;
-                font-weight: bold;
-                cursor: pointer;
-                transition: all 0.3s ease;
-                position: relative;
-                display: inline-block;
-                outline: none;
-                border: none;
-                color: #443919;
-              }
-            .css-button-sharp--sky.active {
-                color: #fff;
-                background: #443919;
-              }
+           
 
         }
+        .css-button-sharp--sky {
+            min-width: 130px;
+            height: 40px;
+            background-color: #fff;
+            padding: 5px 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            display: inline-block;
+            outline: none;
+            border: none;
+            color: #443919;
+          }
+        .css-button-sharp--sky.active {
+            color: #fff;
+            background: #443919;
+          }
         .tab-content{
             .tab-pane{
                 background-color: #44391982;
@@ -140,10 +144,115 @@
             }
         }
     }
+    .col-image-lastone{
+        position: relative;
+        img, svg{
+            position: fixed;
+            right: 100px;
+            top: 30px;
+            filter: opacity(0.5);
+            transform: rotateY(180deg);
+        }
+    }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
     #aboutPage{
+        background-size: 120% auto;
         
+        background-repeat: no-repeat;
+        div.aboutBody{
+            padding-left: 6em;
+            .workArea{
+                .css-button-sharp--sky {
+                
+    height: 50px;
+    white-space: nowrap;
+            }
+            h4, h2, h5{
+                padding-left: 1px;
+            }
+            .tab-content{
+                .tab-pane{
+                    height: 12.5em;
+                    font-weight: 300;
+                }
+            }
+        }
+            .first-col{
+                padding-left: 10px;
+                p{
+                    padding-left: 1px;
+                    font-weight: bolder;
+                }
+            }
+        }
+        .col-image-lastone{
+            img, svg{
+                right: 10px;
+                top: 20px;
+                filter: opacity(0.3);
+            }
+
+        }
     } 
+}
+
+@media screen and (max-width: 426px) {
+    #aboutPage{
+        background: none;
+        background-image: none;
+        background-image:  url(../wave1.svg), url(../wave2.svg);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        div.aboutBody{
+            padding-left: 3em;
+            h4{
+                margin-top: 50px !important;
+            }
+            .workArea-mobile{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: stretch;
+                align-content: space-between;
+                margin-bottom: 15px;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                width: 88vw;
+                button.css-button-sharp--sky{
+                    margin-right: 20px;
+                    height: 55px;              
+              }
+            }
+            .workArea-mobile::-webkit-scrollbar { 
+                display: none;  /* Safari and Chrome */
+            }
+            h2{
+                font-size: 3rem;
+            }
+            h5{
+                font-size: 2rem;
+            }
+            p{
+                font-size: inherit;
+                padding-right: 28px;
+            }
+            .tab-content{
+                .tab-pane{
+                    height: 16em;
+                }
+            }
+        }
+        div.workArea{
+            display: none;
+        }
+        .col-image-lastone{
+            display: none;
+            img, svg{
+                display: none;
+            }
+        }
+    }
 }

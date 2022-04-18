@@ -3,10 +3,10 @@ import Fade from 'react-reveal/Fade'
 
 function Projects() {
      return (
-          <div className="container-fluid" id="projectPage"  style={{ backgroundImage: 'url(./b1.png)' }}>
+          <div className="container-fluid" id="projectPage">
                <Fade cascade top>
                     <div className='row'>
-                         <div className='work-text col'>
+                         <div className='work-text col-sm-12 col-lg'>
                               <h4 className="text-start py-3">Some of my recent work</h4>
                               <p>This is a showcase of some of my past work in a variety of fields,
                                     and past projects. These include large and small projects as well as personal
@@ -16,7 +16,7 @@ function Projects() {
                                    Some of the major technologies used in these projects include <span>Vue, </span><span>Next, </span><span>React, </span> and <span>Nuxt.</span>
                               </p>
                          </div>
-                         <ul className="array col row">
+                         <ul className="array col-sm-12 col-lg row">
                               <li class="carded">
             <img src="./inclusive.PNG" alt="gdgd"/>
             <h3>Inclusive Learning Hub</h3>

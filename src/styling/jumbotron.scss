@@ -5,9 +5,10 @@
     -moz-animation: AnimationName 30s ease infinite;
     animation: AnimationName 30s ease infinite;
     .theText{
-        text-align: START;
+        text-align: start;
         align-self: flex-end;
         padding: 3em;
+        margin-bottom: 1px;
         h3{
             font-family: 'Festive', cursive;
             font-size: 4rem;
@@ -195,4 +196,55 @@
     0%{background-position:0% 56%}
     50%{background-position:100% 45%}
     100%{background-position:0% 56%}
+}
+
+@media screen and (max-width: 768px) {
+  .banner-row{
+    padding-left: 2em;
+    padding-right: 2em;
+    .theText{
+      padding-top: 1.5em;
+      padding-bottom: 0px;
+      
+    }
+    .me-image{
+      div.texts{
+        padding-top: -30px;
+        text-align: start;
+          h1:hover{
+              color: cadetblue;
+              text-decoration: line-through;
+          }
+          >h1:nth-child(1){
+            font-size: 3em;
+            width: max-content;
+          }
+          >h1:nth-child(2){
+            font-size: 4em;
+            width: max-content;
+          }
+          >h1:nth-child(3){
+            font-size: 5em;
+            width: max-content;
+          }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .banner-row{
+    padding-left: 0em;
+    padding-right: 0em;
+    .theText{
+      padding-top: 2.5em;
+      padding-bottom: 0px;
+      
+    }
+    .me-image{
+      div.texts{
+        padding-top: 0;
+      }
+    }
+  }
 }

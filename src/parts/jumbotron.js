@@ -26,11 +26,11 @@ function Jumbotron() {
         <div className="col-lg-5 theText">
          
           <Slide right>
-            <h3>I'm <span>Iboro</span></h3>
-            <h1>Code Architect</h1>
+            <h3 className='text-light'>I'm <span>Iboro</span></h3>
+            <h1 className='text-light'>Code Architect</h1>
           </Slide>
           <Slide right>
-            <p className="mx-2">
+            <p className="mx-2 text-light">
               I'm a Software Engineer and I love
               to build amazing things using
               various technologies. I'm a
@@ -42,12 +42,12 @@ function Jumbotron() {
           </Fade>
         </div>
         <Zoom>
-          <div className="col-lg-6 me-image" >
+          <div className="col-lg-6 me-image mt-4" >
 
             <div className='texts'>
-              <h1 onClick={goToWork}>WORK</h1>
-              <h1 onClick={goToAbout}>ABOUT</h1>
-              <h1 onClick={goToContact}>CONTACT</h1>
+              <h1  className='text-light' onClick={goToWork}>WORK</h1>
+              <h1  className='text-light' onClick={goToAbout}>ABOUT</h1>
+              <h1  className='text-light' onClick={goToContact}>CONTACT</h1>
             </div>
 
           </div>

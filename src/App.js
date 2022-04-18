@@ -9,15 +9,24 @@ import { useNavigate } from "react-router-dom";
 
 function App(props) {
   let navigate = useNavigate();
+  const goToWork = () => {
+    navigate("/work");
+  }
+  const goToAbout = () => {
+    navigate("/about");
+  }
+  const goToContact = () => {
+    navigate("/contact-me");
+  }
   const pathname = window.location.pathname
   const goHome = () => {
     navigate("/");
   }
 
   let dynamicHome = () => {
-    if(pathname == '/') {
+    if(pathname === '/') {
       return <div>
-         <span className="straight">|||||||||||||||||||||||||||||||||||</span>
+         <span className="straight">||||||||||||||||||||||||||||||||</span>
       </div>
     } else {
       return <div>
@@ -57,6 +66,16 @@ function App(props) {
   return (
     <div className="App">
      <div className="cursor"></div>
+     <input type="checkbox" id="overlay-input" />
+<label for="overlay-input" id="overlay-button"><span></span></label>
+  <div id="overlay">
+    <ul>
+    <li onClick={goHome}>Home</li>
+      <li onClick={goToWork}>Work</li>
+      <li onClick={goToAbout}>About</li>
+      <li onClick={goToContact}>Contact</li>
+    </ul>
+  </div>
      <div className='text-straight row'>
       {
         dynamicHome()

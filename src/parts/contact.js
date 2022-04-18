@@ -2,7 +2,9 @@ import '../styling/contact.scss';
 
 function Contact() {
   return (
-    <div className="container-fluid" id="contactPage">
+    <div className="container-fluid" id="contactPage" style={{
+      backgroundImage: 'url(./back.svg)'
+    }}>
       <div class="loop-wrapper">
       <div class="mountain"></div>
       <div class="hill"></div>
