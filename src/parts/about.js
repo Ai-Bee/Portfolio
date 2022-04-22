@@ -22,14 +22,13 @@ function About() {
                 <span>Web3 Enthusiast,</span>  <br />
                 <span>Problem Solver...</span></h5>
               <p className='text-start'>
-                I've been a lover of all things tech as long as I can recall. Thanks to my background a computer science and also intentional interest, I have indepth knowledge of not just coding but <span>software engineering</span> and software development processes.
+                I've been a lover of all things tech as long as I can recall. Thanks to my intentional interest and my background in computer science, I have indepth knowledge of not just coding but <span>software engineering</span> and software development processes.
               </p>
               <p className='text-start'>
-                I've been debugging and building solutions for the web since <span>2018</span>. My first official job was at
-                <span>
+              I've been debugging and building solutions for the web since <span>2018</span>. My first official job was at <span>
                   <a href='https://ehealth4everyone.com/' target="_blank" rel='noreferrer'> ehealth4everyone</a>
-                </span> where I built new features and maintained existing solutions for the front end. I especially worked on one of their major applications,  <span>
-                  <a href='https://msdat.fmohconnect.gov.ng' target="_blank" rel='noreferrer'>MSDAT</a></span>, a health analytics Dashboard. I also worked on other projects and learnt a lot.
+                </span>, where I built new features and maintained existing solutions for the front end. I especially worked on one of their major applications, <span>
+                  <a href='https://msdat.fmohconnect.gov.ng' target="_blank" rel='noreferrer'>MSDAT</a></span>, a health analytics dashboard. I also worked on other projects and learnt a lot.
               </p>
               <p className='text-start'>
                 Since then I've taken on numerous freelance projects and I've moved on to work for other institutions, including <span>Kora Technologies</span>, and also an internship with <span>TIIDELab Initiative</span>. This has given me to opportunity to work extensively with a range of technologies including but not limited to latest <span>ES6-ECMAScript 2018,</span> <span>SCSS, GIT, VUE, REACT, NUXT, Web flow, NEXT </span> and <span>jQuery.</span> I'm also <span>Web3</span> enthusiast delving into <span>solidity</span> and <span>dApps.</span>
