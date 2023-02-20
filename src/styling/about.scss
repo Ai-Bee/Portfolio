@@ -18,6 +18,11 @@
         background-size: 100% 100%;
         mix-blend-mode: revert;
         overflow-y: scroll;
+        section {
+            background-color: #44391982;
+            padding: 1.5em;
+            margin-bottom: 4em;
+        }
         .workArea-mobile{
             display: none;
         }
@@ -35,7 +40,7 @@
         .workArea{
             margin-bottom: 2em;
             padding-left: 10px;
-           
+            margin-top: 2em;;
 
         }
         .css-button-sharp--sky {
@@ -60,7 +65,13 @@
             .tab-pane{
                 background-color: #44391982;
                 padding-top: 1.5em;
-                height: 10em;
+                padding-bottom: 1.5em;
+                height: min-content;
+                ul {
+                    li {
+                        font-size: larger;
+                    }
+                }
             }
         }
         .skills{

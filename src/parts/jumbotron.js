@@ -42,7 +42,7 @@ function Jumbotron() {
           </Fade>
         </div>
         <Zoom>
-          <div className="col-lg-6 me-image mt-4" >
+          <div className="col-lg-6 me-image" >
 
             <div className='texts'>
               <h1  className='text-light' onClick={goToWork}>WORK</h1>
