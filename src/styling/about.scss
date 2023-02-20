@@ -6,7 +6,6 @@
 	background-attachment: fixed;
     overflow-x: hidden;
     height: 100vh;
-    background-image: url(../DT1579.jpg);
     div.aboutBody{
         color: #ffffff;
         padding-left: 9vw;
@@ -113,7 +112,14 @@
             a{
                 color: #495057
 
-            }          }
+            }          
+        }
+
+        .grey--button:hover {
+            color: #495057;
+            background-color: #fff;
+        }
+
         h4{
             padding-left: 10px;
             font-size: 39px;

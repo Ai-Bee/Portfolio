@@ -10,7 +10,7 @@ function About() {
     e.preventDefault();
     setCurrent(arg);
   };
-  
+
   return (
     <div>
       <div id="aboutPage" className="about-row row justify-content-center">
@@ -126,7 +126,6 @@ function About() {
                     >
                       <ul className="text-start">
                         <li>
-                        
                           Maintained various websites to ensure efficiency
                         </li>
                         <li>Made use of Highcharts.js to visualize data</li>
@@ -138,7 +137,9 @@ function About() {
                           Built features according to specified mockups and
                           requirements
                         </li>
-                        <li>Built PWA using indexedDB for offline data storage</li>
+                        <li>
+                          Built PWA using indexedDB for offline data storage
+                        </li>
                       </ul>
                     </div>
                     <div
@@ -165,7 +166,10 @@ function About() {
                           Developing new web-based products according to user
                           requirements
                         </li>
-                        <li>Implemented AES and Triple-DES encryption for all user network requests</li>
+                        <li>
+                          Implemented AES and Triple-DES encryption for all user
+                          network requests
+                        </li>
                         <li>Codebase updates and maintenance</li>
                         <li>
                           Building new features and fixing bugs as and when
@@ -198,84 +202,89 @@ function About() {
                 </ul>
               </div>
               <div className="row">
-                      <div className="col">
-                      <button className="css-button-sharp--grey mb-5">
-                <a
-                  href="https://www.canva.com/design/DAFY0Jxfb70/n_T_6WB_ouqTTvvjLcSy5Q/view?utm_content=DAFY0Jxfb70&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  VIEW MY CV
-                </a>
-              </button>
-                      </div>
-                      <div className="col">
-                      <button onClick={() => setShowMore(!showMore)} className="css-button-sharp--grey mb-5">
-               
-                  READ {showMore? 'LESS' : 'MORE'}
-              
-              </button>
-                      </div>
+                <div className="col">
+                  <button className="css-button-sharp--grey mb-5">
+                    <a
+                      href="https://www.canva.com/design/DAFY0Jxfb70/n_T_6WB_ouqTTvvjLcSy5Q/view?utm_content=DAFY0Jxfb70&utm_campaign=designshare&utm_medium=link&utm_source=homepage_design_menu"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      VIEW MY CV
+                    </a>
+                  </button>
+                </div>
+                <div className="col">
+                  <button
+                    onClick={() => setShowMore(!showMore)}
+                    className="css-button-sharp--grey grey--button mb-5"
+                  >
+                      READ {showMore ? "LESS" : "MORE"}
+                    
+                  </button>
+                </div>
               </div>
-              { showMore && <section>
-              <p className="text-start">
-                I've been a lover of all things tech as long as I can recall.
-                Thanks to my intentional interest and my background in computer
-                science, I have indepth knowledge of not just coding but{" "}
-                <span>software engineering</span> and software development
-                processes.
-              </p>
-              <p className="text-start">
-                I've been debugging and building solutions for the web since{" "}
-                <span>2018</span>. My first official job was at{" "}
-                <span>
-                  <a
-                    href="https://ehealth4everyone.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {" "}
-                    ehealth4everyone
-                  </a>
-                </span>
-                , where I built new features and maintained existing solutions
-                for the front end. I especially worked on one of their major
-                applications,{" "}
-                <span>
-                  <a
-                    href="https://msdat.fmohconnect.gov.ng"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    MSDAT
-                  </a>
-                </span>
-                , a health analytics dashboard. I also worked on other projects
-                and learnt a lot.
-              </p>
-              <p className="text-start">
-                Since then I've taken on numerous freelance projects and I've
-                moved on to work for other institutions, including{" "}
-                <span>Kora Technologies</span>, and also an internship with{" "}
-                <span>TIIDELab Initiative</span>. This has given me to
-                opportunity to work extensively with a range of technologies
-                including but not limited to latest{" "}
-                <span>ES6-ECMAScript 2018,</span>{" "}
-                <span>SCSS, GIT, VUE, REACT, NUXT, Web flow, NEXT </span> and{" "}
-                <span>jQuery.</span> I'm also <span>Web3</span> enthusiast
-                delving into <span>solidity</span> and <span>dApps.</span>
-              </p>
-              <p className="text-start">
-                What excites me most about being a front end developer is being
-                able to design and create things that have purpose and improve
-                web experiences. I like to find a{" "}
-                <span>
-                  {" "}
-                  balance between having a beautiful UI and actually being
-                  functional and having great UX.
-                </span>
-              </p>
-              </section> }
+              {showMore && (
+                <section>
+                  <p className="text-start">
+                    I've been a lover of all things tech as long as I can
+                    recall. Thanks to my intentional interest and my background
+                    in computer science, I have indepth knowledge of not just
+                    coding but <span>software engineering</span> and software
+                    development processes.
+                  </p>
+                  <p className="text-start">
+                    I've been debugging and building solutions for the web since{" "}
+                    <span>2018</span>. My first official job was at{" "}
+                    <span>
+                      <a
+                        href="https://ehealth4everyone.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        {" "}
+                        ehealth4everyone
+                      </a>
+                    </span>
+                    , where I built new features and maintained existing
+                    solutions for the front end. I especially worked on one of
+                    their major applications,{" "}
+                    <span>
+                      <a
+                        href="https://msdat.fmohconnect.gov.ng"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        MSDAT
+                      </a>
+                    </span>
+                    , a health analytics dashboard. I also worked on other
+                    projects and learnt a lot.
+                  </p>
+                  <p className="text-start">
+                    Since then I've taken on numerous freelance projects and
+                    I've moved on to work for other institutions, including{" "}
+                    <span>Kora Technologies</span>, and also an internship with{" "}
+                    <span>TIIDELab Initiative</span>. This has given me to
+                    opportunity to work extensively with a range of technologies
+                    including but not limited to latest{" "}
+                    <span>ES6-ECMAScript 2018,</span>{" "}
+                    <span>SCSS, GIT, VUE, REACT, NUXT, Web flow, NEXT </span>{" "}
+                    and <span>jQuery.</span> I'm also <span>Web3</span>{" "}
+                    enthusiast delving into <span>solidity</span> and{" "}
+                    <span>dApps.</span>
+                  </p>
+                  <p className="text-start">
+                    What excites me most about being a front end developer is
+                    being able to design and create things that have purpose and
+                    improve web experiences. I like to find a{" "}
+                    <span>
+                      {" "}
+                      balance between having a beautiful UI and actually being
+                      functional and having great UX.
+                    </span>
+                  </p>
+                </section>
+              )}
             </div>
             <div className="col col-image-lastone">
               <img src="./peep-standing.svg" alt="business-3d-man-with-phone" />
